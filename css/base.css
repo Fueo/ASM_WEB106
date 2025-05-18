@@ -13,6 +13,7 @@
     --button-text: 2.0rem;
     --article-text: 1.6rem;
     --code-text: 1.4rem;
+    --text-12px: 1.2rem;
 }
 
 * {
@@ -46,7 +47,7 @@ html {
 
 @media (width <=1024px) {
     html {
-        font-size: 5px;
+        font-size: 7.5px;
         line-height: 0.8rem;
     }
 }

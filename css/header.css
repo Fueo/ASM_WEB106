@@ -141,7 +141,10 @@
 }
 
 @media (width <=1024px) {
+
+
     .header {
+
         height: 68px;
         position: fixed;
         top: 0;
