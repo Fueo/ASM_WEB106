@@ -299,12 +299,10 @@ body {
 }
 
 .introduce .text :nth-child(2) {
-
-    margin-top: 16px;
+    margin: 16px 0;
     color: var(--brand1);
     font-size: var(--h2-text);
     line-height: 42px;
-
 }
 
 .introduce .right {
@@ -318,6 +316,179 @@ body {
     border-radius: 16px;
 }
 
+.bg_full2 {
+    width: 100%;
+    background-image: linear-gradient(rgba(41, 47, 54, 0.9), rgba(41, 47, 54, 0.9)), url(../img/skill_background.png);
+    background-repeat: inherit;
+}
+
+.skill {
+    width: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    min-height: 1080px;
+    position: relative;
+}
+
+.skill-icon {
+    font-size: 168px;
+    color: var(--brand1);
+    font-family: "Ubuntu", sans-serif;
+    position: absolute;
+    top: 11.8%;
+    right: 16.1%;
+}
+
+.skill-content {
+    width: 100%;
+    padding: 128px;
+}
+
+.skill-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 64px;
+}
+
+.skill-text {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--brand1);
+    font-size: var(--h1-text);
+    position: relative;
+    /* Matching the turquoise text */
+}
+
+.skill-line {
+    height: fit-content;
+}
+
+.skill .title_icon {
+    text-align: center;
+}
+
+.skill-subtext {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 16px;
+    min-height: 40px;
+    color: var(--white);
+    font-size: var(--article-text);
+}
+
+.skill-cards {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    position: relative;
+    background: var(--brand2);
+    border-radius: 8px;
+    min-height: 132px;
+    width: 296px;
+    min-width: 296px;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skill-card-deco {
+    width: 8px;
+    min-height: 132px;
+    z-index: 100;
+    border-radius: 8px 0 0 8px;
+    background-color: #0C73B8;
+    position: absolute;
+    left: 0;
+}
+
+.skill-card-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.skill-card-title {
+    font-size: 24px;
+    color: var(--bg1);
+    line-height: 32px;
+}
+
+.skill-card-tech {
+    font-size: 16px;
+    color: var(--bg1);
+    line-height: 20px;
+}
+
+.skill-tags {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    flex-wrap: wrap;
+}
+
+.skill-tag-icon {
+    width: 144px;
+    height: 144px;
+    padding: 40px;
+    border-radius: 80px;
+}
+
+.skill-tag-icon>img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.skill-tag-text {
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 24px;
+}
+
+.html {
+    background-color: #E54F26;
+}
+
+.html-text {
+    color: #E54F26;
+}
+
+.css {
+    background-color: #0C73B8;
+}
+
+.css-text {
+    color: #0C73B8;
+}
+
+.js {
+    background-color: #E7A020;
+}
+
+.js-text {
+    color: #E7A020;
+}
+
+.java {
+    background-color: #28A9E0;
+}
+
+.java-text {
+    color: #28A9E0;
+}
 
 @media (max-width:1024px) {
     .about-me {
@@ -369,6 +540,10 @@ body {
         display: none;
     }
 
+    .introduce .text {
+        padding: 24px;
+    }
+
     .introduce .content {
         flex-direction: column;
         padding: 0 24px;
@@ -392,4 +567,33 @@ body {
         width: 90%;
         height: 364px;
     }
+
+    .skill-content {
+        padding: 64px 24px;
+    }
+
+
+    .skill-cards {
+        gap: 32px;
+    }
+
+    .skill-subtext {}
+
+    .skill .title_icon {
+        display: none;
+    }
+
+    .skill-icon {
+        display: none;
+    }
+
+    .skill-card-title {
+        font-size: var(--h2-text);
+    }
+
+    .skill-tags {
+        gap: 64px;
+    }
+
+    .skill-tag {}
 }
