@@ -106,29 +106,29 @@
     width: 24px;
 }
 
-.contact {
+.header-contact {
     margin-left: 64px;
     width: 40%;
     gap: 32px;
     font-size: var(--article-text);
 }
 
-.contact a {
+.header-contact a {
     color: var(--white);
 }
 
-.contact-item {
+.header-contact-item {
     display: flex;
     gap: 8px;
     align-items: center;
 }
 
-.contact-item img {
+.header-contact-item img {
     width: 20px;
     height: 20px;
 }
 
-.contact-item:hover {
+.header-contact-item:hover {
     opacity: 0.8;
     transition: 0.5s ease-in-out;
 }
@@ -150,7 +150,7 @@
         top: 0;
     }
 
-    .contact {
+    .header-contact {
         display: none !important;
     }
 

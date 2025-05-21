@@ -2,11 +2,15 @@ body {
     background-color: var(--bg1);
 }
 
+.bg_color {
+    background-color: var(--bg1);
+}
+
 
 .about-me {
     font-family: "Ubuntu", sans-serif;
-    margin: 0 auto;
     width: 95%;
+    margin: 0 auto;
     min-height: 750px;
     padding: 0;
     background-color: var(--bg1);
@@ -343,16 +347,22 @@ body {
     padding: 128px;
 }
 
-.skill-title {
+.skill-title,
+.contact-title {
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    margin: 0 auto;
     margin-top: 64px;
+
+
 }
 
-.skill-text {
+.skill-text,
+.contact-text {
     font-family: "Ubuntu", sans-serif;
     color: var(--brand1);
     font-size: var(--h1-text);
@@ -360,15 +370,21 @@ body {
     /* Matching the turquoise text */
 }
 
-.skill-line {
+.skill-line,
+.contact-line {
     height: fit-content;
-}
-
-.skill .title_icon {
+    width: 100%;
     text-align: center;
 }
 
-.skill-subtext {
+.skill .title_icon,
+.contact .title_icon {
+    text-align: center;
+}
+
+.skill-subtext,
+.contact-subtext {
+    font-family: "IBM Plex Mono", monospace;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -490,6 +506,128 @@ body {
     color: #28A9E0;
 }
 
+.contact {
+    width: 100%;
+    min-height: 968px;
+}
+
+.contact-btn {
+    width: 100%;
+}
+
+.contact-content {
+    width: 100%;
+    padding: 128px 0;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    color: var(--brand1);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: var(--h2-text);
+    padding: 16px 40px;
+    font-weight: 500;
+    min-width: 410px;
+    margin-top: 102px;
+    background: none;
+    border: var(--brand1) solid 2px;
+    border-radius: 32px 0 32px 0;
+}
+
+.contact-button:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-message {
+    width: 640px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.contact-top-input {
+    width: 100%;
+    display: flex;
+    gap: 128px;
+}
+
+.contact-input-title {
+    font-size: var(--article-text);
+    color: var(--brand1);
+    font-weight: lighter;
+    line-height: 18px;
+}
+
+.contact-input-content {
+    margin-top: 24px;
+    background: none;
+    height: 26px;
+    border: none;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--brand2);
+    color: var(--white);
+    font-size: var(--article-text);
+    line-height: 18px;
+}
+
+.contact-input-group {
+    width: 100%;
+}
+
+.contact-top-input .contact-input-content {
+    width: 100%;
+    max-width: 256px;
+}
+
+.contact-input-content::placeholder {
+    color: var(--white);
+    font-size: var(--article-text);
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.contact-input-content:focus {
+    opacity: 0.8;
+    outline: none;
+}
+
+.contact-bot-input {
+    width: 100%;
+    margin-top: 64px;
+}
+
+
+.contact-bot-input .contact-input-content {
+    width: 100%;
+}
+
+.line-with-circles {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.line-with-circles .circle {
+    width: 12px;
+    height: 12px;
+    background: #12F7D6;
+    /* turquoise color */
+    border-radius: 50%;
+}
+
+.line-with-circles .line {
+    flex: 1;
+    height: 2px;
+    background: #12F7D6;
+    /* turquoise color */
+}
+
 @media (max-width:1024px) {
     .about-me {
         margin-top: 120px;
@@ -579,7 +717,8 @@ body {
 
     .skill-subtext {}
 
-    .skill .title_icon {
+    .skill .title_icon,
+    .contact .title_icon {
         display: none;
     }
 
@@ -595,5 +734,24 @@ body {
         gap: 64px;
     }
 
-    .skill-tag {}
+    .contact {
+        padding: 64px 24px 32px 24px;
+    }
+
+    .contact-top-input {
+        /* width: 90%; */
+        margin: 0 auto;
+        display: flex;
+        gap: 24px;
+    }
+
+    /* .contact-input-group {
+        width: 90%;
+        margin: 0 auto;
+    } */
+
+    .contact-top-input .contact-input-content {
+        max-width: 100%;
+        width: 100%;
+    }
 }
