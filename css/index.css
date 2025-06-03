@@ -225,13 +225,13 @@ body {
 }
 
 .right .number {
-    font-size: var(--number-text);
+    font-size: 48px;
     color: var(--brand1);
     font-weight: 500;
 }
 
 .right .label {
-    font-size: var(--article-text);
+    font-size: 16px;
     color: var(--white);
 }
 
@@ -506,6 +506,10 @@ body {
     color: #28A9E0;
 }
 
+.bg_color2 {
+    background-color: var(--bg2);
+}
+
 .contact {
     width: 100%;
     min-height: 968px;
@@ -517,7 +521,8 @@ body {
 
 .contact-content {
     width: 100%;
-    padding: 128px 0;
+    padding-top: 64px;
+    padding-bottom: 16px;
 }
 
 .contact-btn {
@@ -538,11 +543,6 @@ body {
     border-radius: 32px 0 32px 0;
 }
 
-.contact-button:hover {
-    opacity: 0.6;
-    transition: 0.5s;
-    cursor: pointer;
-}
 
 .contact-message {
     width: 640px;
@@ -607,6 +607,38 @@ body {
     width: 100%;
 }
 
+.contact-button-group {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background-color: var(--brand1);
+    min-width: 234px;
+    height: 56px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    font-size: var(--button-text);
+    font-weight: normal;
+    transition: opacity 0.5s;
+}
+
+.contact-submit-button:hover {
+    opacity: 0.8;
+
+    cursor: pointer;
+}
+
+.contact-submit-button>img {
+    width: 24px;
+    height: 24px;
+}
+
 .line-with-circles {
     display: flex;
     align-items: center;
@@ -616,7 +648,7 @@ body {
 .line-with-circles .circle {
     width: 12px;
     height: 12px;
-    background: #12F7D6;
+    background: var(--brand1);
     /* turquoise color */
     border-radius: 50%;
 }
@@ -624,7 +656,7 @@ body {
 .line-with-circles .line {
     flex: 1;
     height: 2px;
-    background: #12F7D6;
+    background: var(--brand1);
     /* turquoise color */
 }
 
@@ -667,11 +699,17 @@ body {
 
 
     .about-me .right {
-        width: 80%;
+        width: 100%;
     }
 
     .about-me .right .info-card {
+        width: 80%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px
     }
 
     .introduce .title_icon {
@@ -715,8 +753,6 @@ body {
         gap: 32px;
     }
 
-    .skill-subtext {}
-
     .skill .title_icon,
     .contact .title_icon {
         display: none;
@@ -735,7 +771,7 @@ body {
     }
 
     .contact {
-        padding: 64px 24px 32px 24px;
+        padding: 64px 24px 0px 24px;
     }
 
     .contact-top-input {
