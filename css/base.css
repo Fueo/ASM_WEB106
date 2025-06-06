@@ -5,15 +5,15 @@
     --brand2: #98FAEC;
     --gray: #43454D;
     --white: #FFFFFF;
-    --bg-text: 11.7rem;
-    --h1-text: 6.4rem;
-    --number-text: 4.8rem;
-    --h2-text: 3.2rem;
-    --menu-text: 2.4rem;
-    --button-text: 2.0rem;
-    --article-text: 1.6rem;
-    --code-text: 1.4rem;
-    --text-12px: 1.2rem;
+    --bg-text: 117px;
+    --h1-text: 64px;
+    --number-text: 48px;
+    --h2-text: 32px;
+    --menu-text: 24px;
+    --button-text: 20px;
+    --article-text: 16px;
+    --code-text: 14px;
+    --text-12px: 12px;
 }
 
 * {
@@ -45,9 +45,9 @@ html {
     display: flex;
 }
 
-@media (width <=1024px) {
+/* @media (width <=1024px) {
     html {
         font-size: 7.5px;
         line-height: 0.8rem;
     }
-}
+} */

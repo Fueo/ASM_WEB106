@@ -617,6 +617,7 @@ body {
     align-items: center;
     gap: 17px;
     background-color: var(--brand1);
+    border: none;
     min-width: 234px;
     height: 56px;
     border-radius: 32px;
@@ -627,7 +628,7 @@ body {
 }
 
 .contact-submit-button:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 
     cursor: pointer;
 }
@@ -761,7 +762,7 @@ body {
     }
 
     .skill-card-title {
-        font-size: var(--h2-text);
+        font-size: var(--menu-text);
     }
 
     .skill-tags {

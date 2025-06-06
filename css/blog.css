@@ -58,7 +58,7 @@
 .blog-button:hover {
     background: var(--brand1);
     color: var(--bg1);
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.5s, color 0.5s;
     cursor: pointer;
 }
 
@@ -89,14 +89,15 @@
     align-items: center;
     justify-content: center;
     gap: 64px;
+    margin-top: 64px;
     margin-bottom: 128px;
 }
+
+
 
 .blog-card {
     display: flex;
     align-items: center;
-    min-height: 368px;
-    margin: 64px auto 0 auto;
     max-width: 73%;
     padding: 64px 14px;
     gap: 64px;
@@ -122,11 +123,17 @@
     font-size: var(--h2-text);
 }
 
+.blog-card-title:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
 .blog-card-desc {
     color: var(--white);
     font-size: var(--article-text);
     margin-top: 24px;
-    font-weight: 200;
+    font-weight: 300;
+    line-height: 18px;
 }
 
 .blog-card-readmore {
@@ -134,7 +141,7 @@
     font-size: var(--article-text);
     text-decoration: none;
     margin-top: 24px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 18px;
 
     transition: color 0.2s;
@@ -150,7 +157,8 @@
 }
 
 .blog-card-readmore:hover {
-    color: #0C73B8;
+    opacity: 0.6;
+    transition: opacity 0.5s;
 }
 
 .blog-card-meta {
@@ -160,7 +168,12 @@
     margin-top: 28px;
     font-size: var(--code-text);
     color: var(--white);
+    font-weight: 300;
+}
 
+.blog-card-meta>div {
+    display: flex;
+    gap: 8px;
 }
 
 .blog-card-tag {
@@ -181,4 +194,55 @@
 
 .blog-card-meta b {
     font-weight: bold;
+}
+
+@media (width <=1024px) {
+    .blogs {
+        padding: 64px 24px 0 24px;
+    }
+
+    .blog-cards {
+        gap: 64px;
+        width: 100%;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        padding: 0px;
+    }
+
+    .blog-cards> :nth-child(1) {
+        border-top: 1px solid var(--white);
+    }
+
+    .blog-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        gap: 32px;
+        border-top: none;
+        padding: 32px 11px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .blog-card-content {
+        padding: 0 24px;
+    }
+
+    .blog-card-img img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .blog-card-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .blog-card-meta>div {
+        display: flex;
+        gap: 8px;
+    }
+
 }

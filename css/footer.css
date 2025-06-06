@@ -2,10 +2,10 @@
     min-height: 72px;
     width: 100%;
     font-family: "Ubuntu", sans-serif;
+    background: var(--bg1);
 }
 
 .footer-content {
-    background: var(--bg1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,14 +14,12 @@
     padding: 0 128px;
     gap: 100px;
     font-weight: 200;
-    flex-wrap: wrap;
     color: var(--white);
 }
 
 
 .footer-left {
-    font-size: 16px;
-
+    font-size: var(--article-text);
 }
 
 .footer-center {
@@ -33,7 +31,7 @@
 .footer-center a {
     color: var(--white);
     text-decoration: none;
-    font-size: 16px;
+    font-size: var(--article-text);
     transition: opacity 0.2s;
 }
 
@@ -69,7 +67,7 @@
 }
 
 .footer-right {
-    font-size: 16px;
+    font-size: var(--article-text);
 }
 
 .footer-right a {
@@ -97,6 +95,7 @@
 } */
 
 @media (width < 1024px) {
+
     .footer-content .footer-icons {
         order: 1;
     }
@@ -113,11 +112,16 @@
         order: 4;
     }
 
+    .line {
+        width: 100%;
+        ;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
         gap: 24px;
         background-color: var(--bg2);
-        padding: 0 24px 61px 24px;
+        padding: 24px 24px 61px 24px;
     }
 }

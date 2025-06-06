@@ -20,14 +20,14 @@
 
 .logo-group>:nth-child(1) {
     color: var(--brand1);
-    font-size: var(--h2-text);
+    font-size: 3.2em;
     font-weight: 500;
 }
 
 .logo-group>:nth-child(2) {
     margin-left: 8px;
     color: var(--white);
-    font-size: var(--h2-text);
+    font-size: 3.2em;
 }
 
 .navbar {
@@ -44,7 +44,7 @@
 
 .links>a {
     color: var(--white);
-    font-size: var(--menu-text);
+    font-size: 2.4em;
     line-height: 3.2rem;
 }
 
@@ -111,7 +111,7 @@
     margin-left: 64px;
     width: 40%;
     gap: 32px;
-    font-size: var(--article-text);
+    font-size: 1.6em;
 }
 
 .header-contact a {
@@ -149,6 +149,7 @@
         position: fixed;
         z-index: 9999;
         top: 0;
+        font-size: 7.5px;
     }
 
     .header-contact {
