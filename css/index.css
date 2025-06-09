@@ -660,6 +660,8 @@ body {
 }
 
 @media (max-width:1024px) {
+
+
     .about-me {
         margin-top: 120px;
     }
@@ -678,6 +680,10 @@ body {
         max-width: 320px;
         width: 100%;
         padding: 32px 0px;
+    }
+
+    .introduce .left .title {
+        font-size: var(--h2-text);
     }
 
     .about-me .mid .text :nth-child(3) {
@@ -770,7 +776,12 @@ body {
     }
 
     .contact {
-        padding: 64px 24px 0px 24px;
+        margin-top: 64px;
+        padding: 0px 52.5px 0px 52.5px;
+    }
+
+    .contact .contact-subtext {
+        padding: 0 24px;
     }
 
     .contact-top-input {
@@ -779,6 +790,18 @@ body {
         display: flex;
         gap: 24px;
     }
+
+    .contact .contact-btn {
+        width: 100%;
+    }
+
+    .contact .contact-button {
+        font-size: var(--menu-text);
+        padding: 16px 38px;
+        min-width: 100%;
+    }
+
+    .contact .contact-message {}
 
     /* .contact-input-group {
         width: 90%;
