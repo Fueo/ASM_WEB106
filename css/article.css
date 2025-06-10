@@ -24,16 +24,23 @@
     color: var(--white);
 }
 
+.article-share {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.article-share:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
 .article-info>div {
     display: flex;
     gap: 24px;
 }
 
-.article-info>img:hover {
-    opacity: 0.6;
-    transition: opacity 0.5s;
-    cursor: pointer;
-}
 
 .article-info>div>span {
     font-size: var(--code-text);
